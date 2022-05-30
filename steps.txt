@@ -1,0 +1,22 @@
+Step 5
+Remove both the horizontal and vertical scrollbars, and prevent programmatic scrolling, using only one property. You should give body an overflow of clip.
+
+Step 15
+To prevent the mountain from pushing the .ground element, adjust its position to prevent it from taking up space in the page layout. You should give .left-mountain a position of absolute.
+
+Step 16
+To make the mountain look more like a mountain, you can use the skew transform function, which takes two arguments. The first being an angle to shear the x-axis by, and the second being an angle to shear the y-axis by.
+Use the transform property to skew the mountain by 0deg in the x-axis and 44deg in the y-axis.
+
+transform-origin: top left; 
+
+transform: rotate(130deg) scaleX(-1);
+
+Step 100
+Use the wave animation on the left arm. Have the animation last 3s, infinitely iterate, and have a linear timing function.
+  transform: rotate(130deg) scaleX(-1);
+  animation-name: wave;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
